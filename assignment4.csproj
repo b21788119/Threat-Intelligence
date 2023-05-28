@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net45</TargetFramework>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<AssemblyName>pi</AssemblyName>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies.net45" Version="1.0.3">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+	<ItemGroup>
+	  <Reference Include="Accord">
+	    <HintPath>bin\Debug\net45\lib\Accord.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Accord.Imaging">
+	    <HintPath>bin\Debug\net45\lib\Accord.Imaging.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Accord.IO">
+	    <HintPath>bin\Debug\net45\lib\Accord.IO.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Accord.MachineLearning">
+	    <HintPath>bin\Debug\net45\lib\Accord.MachineLearning.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Accord.Math">
+	    <HintPath>bin\Debug\net45\lib\Accord.Math.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Accord.Math.Core">
+	    <HintPath>bin\Debug\net45\lib\Accord.Math.Core.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Accord.Statistics">
+	    <HintPath>bin\Debug\net45\lib\Accord.Statistics.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Accord.Vision">
+	    <HintPath>bin\Debug\net45\lib\Accord.Vision.dll</HintPath>
+	  </Reference>
+	  <Reference Include="BTDH">
+	    <HintPath>bin\Debug\net45\lib\BTDH.dll</HintPath>
+	  </Reference>
+	  <Reference Include="CEDD">
+	    <HintPath>bin\Debug\net45\lib\CEDD.dll</HintPath>
+	  </Reference>
+	  <Reference Include="FCTH">
+	    <HintPath>bin\Debug\net45\lib\FCTH.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <Compile Update="Properties\Settings.Designer.cs">
+	    <DesignTimeSharedInput>True</DesignTimeSharedInput>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Settings.settings</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+	<ItemGroup>
+	  <None Update="Properties\Settings.settings">
+	    <Generator>SettingsSingleFileGenerator</Generator>
+	    <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+	  </None>
+	</ItemGroup>
+</Project>
